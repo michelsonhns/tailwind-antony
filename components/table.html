@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <title>Table tailwind</title>
+</head>
+
+<body>
+
+    <table class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th class="px-6 py-3"></th>
+                <th class="px-6 py-3">
+                    NOM
+                </th>
+                <th class="px-6 py-3">
+                    <div class="flex items-center">
+                        TYPE
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true"
+                                fill="currentColor" viewBox="0 0 320 512">
+                                <path
+                                    d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
+                            </svg></a>
+                    </div>
+                </th>
+                <th class="px-6 py-3">
+                    <div class="flex items-center">
+                        DATE
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true"
+                                fill="currentColor" viewBox="0 0 320 512">
+                                <path
+                                    d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
+                            </svg></a>
+                    </div>
+                </th>
+                <th class="px-6 py-3">
+                    <div class="flex items-center">
+                        STATUS
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true"
+                                fill="currentColor" viewBox="0 0 320 512">
+                                <path
+                                    d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
+                            </svg></a>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b hover:bg-gray-50 ">
+                <td class="pl-6 py-4 text-center w-6">
+                    <button class="relative flex items-center group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                        </svg>
+                        <div
+                            class="absolute left-5 w-64 flex items-center hidden ml-6 group-hover:flex group-focus:flex">
+                            <div class="w-3 h-3 -mr-2 rotate-45 bg-black"></div>
+                            <span
+                                class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">
+                                loreeem ipps.</span>
+                        </div>
+                    </button>
+                </td>
+                <td scope="row" class="px-6 py-4">
+                    xxxxxxxxxxxxx
+                </td>
+                <td class="px-6 py-4">
+                    lot
+                </td>
+                <td class="px-6 py-4">
+                    22/03/23 - 13/12/24
+                </td>
+                <td class="px-6 py-4">
+                    <span class="bg-red-50 px-6 py-2 rounded-3xl text-red-600 font-semibold">Inactif</span>
+                </td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-50 ">
+                <td class="pl-6 py-4 text-center w-6">
+                    <button class="relative flex items-center group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                        </svg>
+                        <div
+                            class="absolute left-5 w-64 flex items-center hidden ml-6 group-hover:flex group-focus:flex">
+                            <div class="w-3 h-3 -mr-2 rotate-45 bg-black"></div>
+                            <span
+                                class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">
+                                loreeem ipps.</span>
+                        </div>
+                    </button>
+                </td>
+                <td class="px-6 py-4">
+                    xxxxxxxxxxxxx
+                </td>
+                <td class="px-6 py-4">
+                    lot
+                </td>
+                <td class="px-6 py-4">
+                    22/03/23 - 13/12/24
+                </td>
+                <td class="px-6 py-4">
+                    <span class="bg-blue-50 px-6 py-2 rounded-3xl text-blue-600 font-semibold">Actif</span>
+                </td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-50 ">
+                <td class="pl-6 py-4 text-center w-6">
+                    <button class="relative flex items-center group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 11.25l1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 10-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25L12.75 9" />
+                        </svg>
+                        <div
+                            class="absolute left-5 w-64 flex items-center hidden ml-6 group-hover:flex group-focus:flex">
+                            <div class="w-3 h-3 -mr-2 rotate-45 bg-black"></div>
+                            <span
+                                class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">
+                                loreeem ipps.</span>
+                        </div>
+                    </button>
+                </td>
+                <td class="px-6 py-4">
+                    xxxxxxxxxxxxx
+                </td>
+                <td class="px-6 py-4">
+                    lot
+                </td>
+                <td class="px-6 py-4">
+                    22/03/23 - 13/12/24
+                </td>
+                <td class="px-6 py-4">
+                    <span class="bg-blue-50 px-6 py-2 rounded-3xl text-blue-600 font-semibold">Actif</span>
+                </td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-50 ">
+                <td class="pl-6 py-4 text-center w-6">
+                    <button class="relative flex items-center group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
+                        </svg>
+                        <div
+                            class="absolute left-5 w-64 flex items-center hidden ml-6 group-hover:flex group-focus:flex">
+                            <div class="w-3 h-3 -mr-2 rotate-45 bg-black"></div>
+                            <span
+                                class="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg">
+                                loreeem ipps.</span>
+                        </div>
+                    </button>
+                </td>
+                <td class="px-6 py-4">
+                    xxxxxxxxxxxxx
+                </td>
+                <td class="px-6 py-4">
+                    lot
+                </td>
+                <td class="px-6 py-4">
+                    22/03/23 - 13/12/24
+                </td>
+                <td class="px-6 py-4">
+                    <span class="bg-blue-50 px-6 py-2 rounded-3xl text-blue-600 font-semibold">Actif</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

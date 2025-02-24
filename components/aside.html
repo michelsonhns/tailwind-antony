@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sidebar tailwind</title>
+</head>
+
+<body class="">
+    <div id="sidebar"
+        class="fixed flex flex-col items-center w-16 h-full overflow-hidden text-gray-400 bg-gray-900 rounded">
+        <a class="flex items-center w-full px-3 mt-3" href="#" onclick="showaside()">
+            LOGO
+        </a>
+        <div class="w-full px-2">
+            <div class="flex flex-col items-center w-full mt-3 border-t border-gray-700">
+                <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                    href="#">
+                    <svg class="w-6 h-6 stroke-current" xmlns=" http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Rectangle_11059" data-name="Rectangle 11059" width="32" height="32"
+                                    fill="none" />
+                            </clipPath>
+                        </defs>
+                        <g id="Groupe_7076" data-name="Groupe 7076" clip-path="url(#clip-path)">
+                            <path id="Tracé_4217" data-name="Tracé 4217"
+                                d="M28.366,10.941,17.8,1.678a2.731,2.731,0,0,0-3.59,0L3.634,10.941a2.81,2.81,0,0,0-.955,2.117V28.2A2.776,2.776,0,0,0,5.429,31H26.571a2.776,2.776,0,0,0,2.75-2.8V13.058a2.81,2.81,0,0,0-.955-2.117M21.25,29.5h-1.5V18.992h-7.5V29.5h-1.5V18.242a.75.75,0,0,1,.75-.75h9a.75.75,0,0,1,.75.75Z" />
+                        </g>
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Dasboard</span>
+                </a>
+                <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                    href="#">
+                    <svg class="w-6 h-6 stroke-current" id="badge_percent_F" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Rectangle_2275" data-name="Rectangle 2275" width="32" height="32"
+                                    fill="none" />
+                            </clipPath>
+                        </defs>
+                        <g id="Groupe_4" data-name="Groupe 4" clip-path="url(#clip-path)">
+                            <path id="Tracé_5" data-name="Tracé 5"
+                                d="M11.674,10.649a.866.866,0,0,0-.645.24,1.328,1.328,0,0,0-.33.709,6.612,6.612,0,0,0-.089,1.194,6.874,6.874,0,0,0,.089,1.225,1.362,1.362,0,0,0,.325.714.877.877,0,0,0,.65.24.838.838,0,0,0,.848-.532,4.647,4.647,0,0,0,.224-1.681,4,4,0,0,0-.237-1.606.844.844,0,0,0-.835-.5" />
+                            <path id="Tracé_6" data-name="Tracé 6"
+                                d="M29.82,16.068l1.114-2.519a.763.763,0,0,0-.166-.856l-1.974-1.919.065-2.754a.765.765,0,0,0-.481-.727L25.819,6.275l-.993-2.568a.762.762,0,0,0-.711-.488H24.1l-2.754.038-1.9-1.992a.76.76,0,0,0-.854-.174L16.067,2.18,13.549,1.067a.756.756,0,0,0-.856.165l-1.92,1.974L8.019,3.141a.785.785,0,0,0-.727.481L6.274,6.181l-2.568.993a.762.762,0,0,0-.487.722l.037,2.754-1.992,1.9a.764.764,0,0,0-.173.854l1.088,2.53L1.066,18.451a.761.761,0,0,0,.166.856L3.2,21.227,3.14,23.981a.766.766,0,0,0,.481.727L6.18,25.726l.993,2.568a.761.761,0,0,0,.711.487h.011l2.754-.037,1.9,1.992a.759.759,0,0,0,.854.173l2.529-1.088,2.519,1.113a.743.743,0,0,0,.308.066.766.766,0,0,0,.548-.232l1.919-1.974,2.754.066a.731.731,0,0,0,.727-.481l1.018-2.559,2.568-.993a.764.764,0,0,0,.488-.722l-.038-2.754,1.992-1.9a.765.765,0,0,0,.174-.854Zm-19.51-.377a2.252,2.252,0,0,1-.941-1.042,4,4,0,0,1-.338-1.73,5.526,5.526,0,0,1,.262-1.832,2.124,2.124,0,0,1,.848-1.114,2.707,2.707,0,0,1,1.5-.38,3.032,3.032,0,0,1,1.156.2,2.108,2.108,0,0,1,.844.62,2.735,2.735,0,0,1,.515,1.017,5.213,5.213,0,0,1,.169,1.41,3.489,3.489,0,0,1-.709,2.4,2.487,2.487,0,0,1-1.941.784,2.767,2.767,0,0,1-1.364-.334m2.613,6.352c-.181.31-.383.465-.608.465a.645.645,0,0,1-.388-.147.462.462,0,0,1-.195-.385.831.831,0,0,1,.169-.431l7.074-11.429a3.064,3.064,0,0,1,.326-.468.507.507,0,0,1,.4-.156.566.566,0,0,1,.41.148.516.516,0,0,1,.156.392,1.731,1.731,0,0,1-.313.675Zm9.336-.7a2.484,2.484,0,0,1-1.941.787,2.771,2.771,0,0,1-1.372-.338A2.307,2.307,0,0,1,18,20.752a3.913,3.913,0,0,1-.343-1.73,4.077,4.077,0,0,1,.63-2.479,2.34,2.34,0,0,1,2-.83,3.02,3.02,0,0,1,1.152.2,2.205,2.205,0,0,1,.844.608,2.581,2.581,0,0,1,.519,1.009,5.274,5.274,0,0,1,.169,1.412,3.48,3.48,0,0,1-.709,2.4" />
+                            <path id="Tracé_7" data-name="Tracé 7"
+                                d="M20.318,16.768A.889.889,0,0,0,19.66,17a1.348,1.348,0,0,0-.334.7,5.944,5.944,0,0,0-.1,1.194,4.2,4.2,0,0,0,.241,1.655.856.856,0,0,0,.848.522.838.838,0,0,0,.844-.534,4.576,4.576,0,0,0,.228-1.677,3.956,3.956,0,0,0-.237-1.591.845.845,0,0,0-.835-.5" />
+                        </g>
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Search</span>
+                </a>
+                <a class="flex items-center w-full h-12 px-3 mt-2 text-gray-200 bg-gray-700 rounded" href="#">
+                    <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Insights</span>
+                </a>
+                <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                    href="#">
+                    <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Docs</span>
+                </a>
+            </div>
+            <div class="flex flex-col items-center w-full mt-2 border-t border-gray-700">
+                <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                    href="#">
+                    <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Products</span>
+                </a>
+                <a class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                    href="#">
+                    <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Settings</span>
+                </a>
+                <a class="relative flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+                    href="#">
+                    <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                    </svg>
+                    <span class="hidden title ml-2 text-sm font-medium">Messages</span>
+                    <span class="absolute top-0 left-0 w-2 h-2 mt-2 ml-2 bg-indigo-500 rounded-full"></span>
+                </a>
+            </div>
+        </div>
+        <a class="flex items-center justify-center w-full h-16 mt-auto bg-gray-800 hover:bg-gray-700 hover:text-gray-300"
+            href="#">
+            <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="hidden title ml-2 text-sm font-medium">Account</span>
+        </a>
+    </div>
+
+
+    <script src="../assets/js/actions.js"></script>
+</body>
+
+</html>

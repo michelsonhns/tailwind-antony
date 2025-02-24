@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/master.css">
+    <title>Card tailwind</title>
+
+</head>
+
+<body>
+    <main>
+        <div id="demo"></div>
+        <h1 class="text-4xl pb-16 text-center">Card 100% tailwind</h1>
+        <section class="py-6">
+            <div class="lg:w-1/6 md:w-1/3 sm:w-1/2">
+                <div class="card bg-white rounded-xl w-100 hover:bg-slate-200">
+                    <div class="card_header mb-4">
+                        <div class="card_header--tagline flex justify-between">
+                            <h2 id="name" class="text-base leading-7 text-gray-600 mb-4"></h2>
+                            <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                                aria-pressed="false" aria-label="See more actions">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p id="total" class="xl:text-3xl lg:text-2xl md:text-xl font-semibold"></p>
+                            <span
+                                class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                <i class="bi bi-graph-up-arrow mr-1"></i>
+                                59.3 %
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card_footer w-100">
+                        <p class="lg:text-sm">
+                            Total
+                            <span class="font-semibold text-sky-700">
+                                35412
+                            </span>
+                            depuis
+                            <span id="startAt"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs mt-4">Card par défaut, avec un width 100% il s'adapte à la taile de sa div parente</p>
+        </section>
+        <section class="py-6">
+            <h2 class="text-2xl	mb-6">Templating avec grid</h2>
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2">
+                <div class="card bg-white rounded-xl w-100  hover:bg-slate-200">
+                    <div class="card--header flex justify-between">
+                        <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x</h2>
+                        <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                            aria-pressed="false" aria-label="See more actions">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                    </div>
+                    <div class="card--body mt-0.5 mb-5">
+                        <div class="flex justify-between items-center">
+                            <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                            <span
+                                class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                <i class="bi bi-graph-up-arrow mr-1"></i>
+                                59.3 %
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card--footer">
+                        <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                class="font-semibold text-sky-700">35412</span> cette
+                            année
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-xl w-100  hover:bg-slate-200">
+                    <div class="card--header flex justify-between">
+                        <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x</h2>
+                        <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                            aria-pressed="false" aria-label="See more actions">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                    </div>
+                    <div class="card--body mt-0.5 mb-5">
+                        <div class="flex justify-between items-center">
+                            <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                            <span
+                                class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                <i class="bi bi-graph-up-arrow mr-1"></i>
+                                59.3 %
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card--footer">
+                        <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                class="font-semibold text-sky-700">35412</span> cette
+                            année
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-xl w-100  hover:bg-slate-200">
+                    <div class="card--header flex justify-between">
+                        <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x</h2>
+                        <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                            aria-pressed="false" aria-label="See more actions">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                    </div>
+                    <div class="card--body mt-0.5 mb-5">
+                        <div class="flex justify-between items-center">
+                            <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                            <span
+                                class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                <i class="bi bi-graph-up-arrow mr-1"></i>
+                                59.3 %
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card--footer">
+                        <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                class="font-semibold text-sky-700">35412</span> cette
+                            année
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-6">
+            <h2 class="text-2xl	mb-6">Status</h2>
+            <div class="flex space-x-2 space-y-2 items-baseline">
+                <div class="lg:w-1/4 md:w-1/2">
+                    <div class="card bg-white rounded-xl w-100  hover:bg-slate-200">
+                        <div class="card--header flex justify-between">
+                            <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x
+                            </h2>
+                            <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                                aria-pressed="false" aria-label="See more actions">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="card--body mt-0.5 mb-5">
+                            <div class="flex justify-between items-center">
+                                <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                                <span
+                                    class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                    <i class="bi bi-graph-up-arrow mr-1"></i>
+                                    59.3 %
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card--footer">
+                            <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                    class="font-semibold text-sky-700">35412</span> cette
+                                année
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs mt-4">Par défaut</p>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2">
+                    <div class="card danger bg-white rounded-xl w-100  hover:bg-slate-200">
+                        <div class="card--header flex justify-between">
+                            <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x
+                            </h2>
+                            <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                                aria-pressed="false" aria-label="See more actions">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="card--body mt-0.5 mb-5">
+                            <div class="flex justify-between items-center">
+                                <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                                <span
+                                    class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                    <i class="bi bi-graph-up-arrow mr-1"></i>
+                                    59.3 %
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card--footer">
+                            <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                    class="font-semibold text-sky-700">35412</span> cette
+                                année
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs mt-4">Danger</p>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2">
+                    <div class="card info bg-white rounded-xl w-100  hover:bg-slate-200">
+                        <div class="card--header flex justify-between">
+                            <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x
+                            </h2>
+                            <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                                aria-pressed="false" aria-label="See more actions">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="card--body mt-0.5 mb-5">
+                            <div class="flex justify-between items-center">
+                                <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                                <span
+                                    class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                    <i class="bi bi-graph-up-arrow mr-1"></i>
+                                    59.3 %
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card--footer">
+                            <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                    class="font-semibold text-sky-700">35412</span> cette
+                                année
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs mt-4">Info</p>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2">
+                    <div class="card warning bg-white rounded-xl w-100  hover:bg-slate-200">
+                        <div class="card--header flex justify-between">
+                            <h2 class="xl:text-xl lg:text-lg md:text-base leading-7 text-black mb-4">Total promotion x
+                            </h2>
+                            <button class="cursor-pointer self-start" tabindex="0" role="button" title="Actions"
+                                aria-pressed="false" aria-label="See more actions">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="card--body mt-0.5 mb-5">
+                            <div class="flex justify-between items-center">
+                                <p class="xl:text-3xl lg:text-2xl md:text-xl font-semibold">8,61,84</p>
+                                <span
+                                    class="cursor-default rounded-lg font-semibold w-fit text-center lg:text-sm lg:p-2 bg-sky-100 text-sky-700">
+                                    <i class="bi bi-graph-up-arrow mr-1"></i>
+                                    59.3 %
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card--footer">
+                            <p class="lg:text-sm">Vous avez fait un extrat de <span
+                                    class="font-semibold text-sky-700">35412</span> cette
+                                année
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs mt-4">Warning</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        let promos = '{"promo":[' +
+            '{"total": "52.654", "name":"Promo noel", "brand":"xxxxxxxxxxxxxxxxxxx","startAt":"01 janv 2022" },' +
+            '{"total": "52.564","name":"Fête des Mères","brand":"Ducray","startAt":"15 janv 2023" },' +
+            '{"total": "5265654", "name":"Promo été", "brand":"La roche posay","startAt":"decembre 2023" }]}';
+        const obj = JSON.parse(promos);
+
+        var books = [
+            {
+                title: "Lord of the Rings",
+                year: 1994,
+                pages: 3000
+            },
+            {
+                title: "1984",
+                year: 1984,
+                pages: 2000
+            },
+            {
+                title: "Art of war",
+                year: 2000,
+                pages: 5000
+            }
+        ]
+
+        for (i = 0; i < books.length; i++) {
+            document.log(books[i].title);
+        }
+
+        // for (const key in obj) {
+        //     if (obj.hasOwnProperty(key)) {
+        //         document.getElementById("demo").innerHTML = obj.promo[0].name;;
+        //     }
+        // }
+        // document.getElementById("demo").innerHTML = text;
+
+
+        // document.getElementById("name").innerHTML = obj.promo[1].name;
+        // document.getElementById("total").innerHTML = obj.promo[1].total;
+        // document.getElementById("startAt").innerHTML = obj.promo[1].startAt;
+
+
+
+    </script>
+</body>
+
+</html>
